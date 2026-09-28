@@ -1,9 +1,9 @@
 import java.math.BigDecimal;
 
-public class Task01Adapter implements IPaymentGateway {
+public class PaymentGatewayAdapter implements IPaymentGateway {
     private final LegacyBillingSystem legacyBillingSystem;
 
-    public Task01Adapter(LegacyBillingSystem legacyBillingSystem) {
+    public PaymentGatewayAdapter(LegacyBillingSystem legacyBillingSystem) {
         if (legacyBillingSystem == null) {
             throw new IllegalArgumentException("LegacyBillingSystem cannot be null");
         }
